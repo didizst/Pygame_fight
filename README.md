@@ -155,17 +155,10 @@ Pontos para instalacao: 1 4 5
 ## Tecnologias Utilizadas
 
 - Linguagem C.
-- Biblioteca padrão (`math.h`, `stdio.h`).
+- Biblioteca padrão (`math.h`, `stdio.h`, etc.).
 
 ---
 
-## Próximos Passos
-
-- Adicionar suporte para mais formatos de entrada de dados.
-- Adicionar uma interface com animações do caminhão percorrendo os postos.
-- Implementar outros algoritmos de otimização de rotas, como **Algoritmo Genético** ou **Simulated Annealing**.
-
----
 
 ## Contribuição
 
@@ -179,4 +172,4 @@ Este projeto é de uso livre para fins educacionais.
 
 ---
 
-Feito por Ádilla, Brendda e Camilly
+Feito por Diego Miqueias, Sarah Marques e Carlos Eduardo
