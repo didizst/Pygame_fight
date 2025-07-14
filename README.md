@@ -68,11 +68,49 @@ EOF
 
 O programa funciona da seguinte maneira:
 
-1. O usuário seleciona um arquivo contendo a descrição da rede (pontos e conexões)
-2. O programa lê o arquivo e armazena as conexões
-3. O algoritmo guloso é aplicado para encontrar o número mínimo de câmeras
-4. Os resultados são exibidos ao usuário
+- **1**. O usuário seleciona um arquivo contendo a descrição da rede (pontos e conexões)
+- **2**. O programa lê o arquivo e armazena as conexões
+- **3**.O algoritmo guloso é aplicado para encontrar o número mínimo de câmeras
+- **4** .Os resultados são exibidos ao usuário
 ---
+## Leitura do Arquivo  (`leitura.h` e `leitura.c`)
+```bash
+typedef struct {
+ int a;
+ int b;
+} Conexao;
+```
+```bash
+int ler_arquivo(const char *nome_arquivo, Conexao **conexoes, int *num_conexoes, int
+*num_pontos)
+```
+
+Esta função:
+
+- **1**. Abre o arquivo especificado
+- **2** .Lê os dois primeiros números: número de pontos e de conexões
+- **3** .Aloca memória e armazena as conexões lidas
+- **4**. Retorna 0 em caso de sucesso ou -1 em erro
+
+## Algoritmo Guloso (`algoritmo.h` e `algoritmo.c`)
+```bash
+typedef struct {
+ int *pontos; // Array de pontos selecionados para instalação de câmeras
+ int tamanho; // Número de pontos selecionados (tamanho do array)
+} Solucao;
+```
+```bash
+Solucao encontrar_minimo_cameras_guloso(Conexao *conexoes, int num_conexoes, int
+num_pontos)
+```
+
+###Funcionamento:
+1. Inicializa estruturas de controle
+2. Em um loop:
+ a. Para cada ponto, calcula quantas conexões não vigiadas ele cobre
+ b. Seleciona o ponto com maior cobertura
+ c. Atualiza conexões vigiadas
+3. Retorna a solução
 
 ## Exemplo de Saída no Terminal
 
