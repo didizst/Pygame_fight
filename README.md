@@ -112,6 +112,15 @@ num_pontos)
  c. Atualiza conexões vigiadas
 3. Retorna a solução
 
+## Interface do Usuário (`main.c`)
+
+Fluxo:
+1. Exibe menu com opções
+2. Carrega e processa o arquivo escolhido
+3. Exibe resultado final
+A função `processar_arquivo()` gerencia a leitura e chamada do algoritmo guloso.
+
+
 ## Exemplo de Saída no Terminal
 
 ### Entrada
