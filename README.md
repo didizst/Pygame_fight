@@ -104,7 +104,7 @@ Solucao encontrar_minimo_cameras_guloso(Conexao *conexoes, int num_conexoes, int
 num_pontos)
 ```
 
-###Funcionamento:
+### Funcionamento:
 1. Inicializa estruturas de controle
 2. Em um loop:
  a. Para cada ponto, calcula quantas conexões não vigiadas ele cobre
