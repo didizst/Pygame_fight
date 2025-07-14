@@ -1,4 +1,4 @@
-# Projeto: VigilanciaEficiente
+# Projeto: Vigilancia Eficiente
 
 ## Descrição
 
@@ -44,11 +44,10 @@ Este projeto tem o objetivo de simular a instalação de uma rede de vigilância
 
 O código está organizado em vários arquivos:
 
-- 1. `main.c` - Contém a lógica principal do programa e a interface do usuário
-- 2. `leitura.h` e `leitura.c` - Responsáveis pela leitura dos arquivos de entrada.
-- 3. `algoritmo.h` e `algoritmo.c` - Implementam o algoritmo guloso para resolver o problema.
-- 4. Arquivos de teste (`n_5_m_6.txt`, `n_6_m_8.txt`, `n_8_m_12.txt`) - Contêm exemplos de redes de pontos
-e conexões.
+- **1**. `main.c` - Contém a lógica principal do programa e a interface do usuário
+- **2**. `leitura.h` e `leitura.c` - Responsáveis pela leitura dos arquivos de entrada.
+- **3**. `algoritmo.h` e `algoritmo.c` - Implementam o algoritmo guloso para resolver o problema.
+- **4**. Arquivos de teste (`n_5_m_6.txt`, `n_6_m_8.txt`, `n_8_m_12.txt`) - Contêm exemplos de redes de pontos e conexões.
 
 
 Exemplo de arquivo de entrada:
@@ -82,7 +81,7 @@ O programa funciona da seguinte maneira:
 Arquivo `n_6_m_8.txt`:
 
 ```
- 5 6
+5 6
 0 1
 0 2
 1 2
